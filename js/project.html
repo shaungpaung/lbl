@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <button onclick="changeMyanmar()">Myanmar</button>
+    <button onclick="changeEnglish()">English</button>
+    <p class="english">How Are You?</p>
+    <p class="myanmar" style="display: none;">နေကောင်းလား?</p>
+    <script>
+        function changeMyanmar(){
+        document.querySelector('.myanmar').style.display="block";
+        document.querySelector('.english').style.display="none";
+        }
+        function changeEnglish(){
+        document.querySelector('.english').style.display="block"
+        document.querySelector('.myanmar').style.display="none";
+        }
+    </script>
+</body>
+</html>

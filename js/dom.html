@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        .one{
+            background-color: aqua;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <img src="off.png" alt="">
+    <button onClick="onBulb()">Click</button>
+    <button onClick="offBulb()">Click</button>
+    <script>
+        // function changeText()
+        // {
+        // //     var result = document.querySelectorAll('h1')
+        // //     // console.log(result[0])
+        // //     // result[0].style.color="yellow"
+        // //     // result[1].style.color="green"
+        // //     // result[1].style.color="green"
+        // //     // result[1].style.color="green"
+        // //     for(var i=0;i<result.length;i++)
+        // //     {
+        // //         result[i].style.color="yellow"
+        // //     }
+        // document.querySelector('h1').classList.toggle('one')
+        // }
+
+        function onBulb(){
+            document.querySelector('img').src="on.png"
+        }
+        function offBulb(){
+            document.querySelector('img').src="off.png"
+        }
+    </script>
+</body>
+</html>

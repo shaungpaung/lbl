@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        .one{
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+ <h1 >Heading</h1>
+ <button class="assign">Assign</button>
+ <button class="get">Get</button>
+ <button>Click</button>
+ <script type="text/javascript">
+    $('button').click(function(){
+        // $('h1').css('color', 'yellow')
+
+        // $('h1').html('<i>New</i>').css({'color': 'red','background':'blue'})
+
+        // $('h1').hide(3000)
+
+        // $('h1').fadeOut(3000)
+
+        // $('h1').show(3000)
+
+        // $('h1').fadeIn(3000)
+
+        // $('h1').toggle(3000)
+
+        // $('h1').slideToggle(3000)
+
+        // $('h1').text('<i>New</i>')
+
+        // $('h1').append('New')
+
+        // $('h1').prepend('<i>New</i>')
+        
+        // $('h1').addClass('one')
+
+        // $('h1').removeClass('one')
+
+        // $('h1').toggleClass('one')
+
+        // $('h1').hasClass('one')
+
+        //get height and width
+        // var h=$('h1').height()
+        // document.write(h)
+        // var w=$('h1').width()
+        // document.write(w)
+
+        //assign height and width
+        // $('h1').height(200).width(200)
+
+        // var pos = $('h1').offset()
+        // document.write(pos.top)
+        // document.write(pos.left)
+
+
+    })
+    $('.assign').click(function(){
+        $('h1').data('id', '1')
+    })
+    $('.get').click(function(){
+        var result = $('h1').data('id')
+        alert(result)
+    })
+ </script>
+</body>
+</html>

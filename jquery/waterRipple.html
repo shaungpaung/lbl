@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    
+    <style type="text/css">
+        div{
+            width: 100%;
+            height: 100vh;
+            background:url('../img/1.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <script type="text/javascript">
+        $('div').ripples({
+        imageUrl: null,
+        resolution: 256,
+        dropRadius: 20,
+        perturbance: 0.01,
+        interactive: true,
+        crossOrigin: ''
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src=".../jquery.ripples.js"></script>
+</body>
+</html>

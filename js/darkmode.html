@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        .dark{
+            background: black;
+            color: #fff;
+        }
+        .light{
+            background: #fff;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <button class="lightMode" onclick="lightMode()">Light</button>
+    <button class="darkMode" onclick="DarkMode()" style="display: none;">Dark</button>
+    <script>
+        function lightMode(){
+            document.querySelector('.darkMode').style.display="inline";
+            document.querySelector('.lightMode').style.display="none";
+            document.querySelector('body').classList.toggle('dark');
+        }
+        function DarkMode(){
+            document.querySelector('body').classList.toggle('dark');
+            document.querySelector('.lightMode').style.display="inline";
+            document.querySelector('.darkMode').style.display="none";
+        }
+    </script>
+</body>
+</html>
